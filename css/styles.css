@@ -308,22 +308,27 @@ ul {
   gap: 10px;
   padding: 16px 32px 30px;
 }
-.pb-social-list-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-.pb-social-list-item:hover,
-.pb-social-list-item:focus {
-  background-color: var(--quaternary-color);
-  cursor: pointer;
-}
+
 .pb-social-icon {
   fill: var(--quintuple-color);
   padding: 12px;
 }
-.pb-social-icon:hover,
-.pb-social-icon:focus {
+.icon-links {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+}
+
+.icon-links:hover svg,
+.icon-links:focus svg {
   fill: var(--primary-color);
+}
+.icon-links:hover,
+.icon-links:focus {
+  background-color: var(--quaternary-color);
+  outline: none;
+  cursor: pointer;
 }
 /* =================================================================================== */
 /* FOURTH SECTION*/
@@ -337,25 +342,27 @@ ul {
 
   gap: 30px;
 }
-.customer-list-item {
+.customer-icon-links {
+  display: flex;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.customer-list-item:hover,
-.customer-list-item:focus {
+.customer-icon-links:hover svg,
+.customer-icon-links:focus svg {
+  fill: var(--quaternary-color);
+  cursor: pointer;
+}
+.customer-icon-links:hover,
+.customer-icon-links:focus {
   border: 1px solid var(--quaternary-color);
   cursor: pointer;
+  outline: none;
 }
 
 .customer-icon {
   padding: 16px 32px;
   fill: var(--quintuple-color);
-}
-
-.customer-icon:hover,
-.customer-icon:focus {
-  fill: var(--quaternary-color);
-  cursor: pointer;
 }
 
 /* =================================================================================== */
@@ -435,6 +442,7 @@ ul {
 .contact-address:focus {
   color: var(--text-color-4);
   cursor: pointer;
+  outline: none;
 }
 
 .footer-link {
